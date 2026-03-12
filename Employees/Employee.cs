@@ -15,7 +15,7 @@ namespace Employees
         public decimal salary { get; set; }
 
         public string Department { get; set; }
-        public string Layer { get; set; }
+        public int Layer { get; set; }
 
 
     }
