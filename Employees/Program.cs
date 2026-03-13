@@ -2,8 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 //fixed  bugs
+
 namespace Employees
 {
+
+
+     
      class Program
     {
         static  List<Employee> employees = new List<Employee>();
@@ -104,11 +108,15 @@ namespace Employees
                 }
                 static  void showemploye()
                 {
-                    foreach(var item in employees)
+                   var cemployee = employees.OrderByDescending(x => x.salary).Select(x=> new { x.emp_id, x.Name, x.LastName ,x.Department ,x.salary , x.Layer ,salarytype = x.salary <=26000 ? "low":x.salary <40000 ?  "Medium": "High" });
+                    foreach(var item in cemployee)
                     {
-                        Console.WriteLine($"{item.emp_id} {item.Name} {item.LastName} {item.Department} {item.salary} "+$"L{item.Layer}");
+                        Console.WriteLine($"{item.emp_id} {item.Name} {item.LastName} {item.Department} {item.salary} {item.salarytype} "+$"L{item.Layer}");
                     }
+                  
                 }
+
+
 
                 static void searchemployee()
                 {
