@@ -11,7 +11,12 @@ Each employee record contains important information such as Employee ID, First N
 This project helped me understand how to structure a small application, manage data using collections, and implement common operations such as adding, searching, and deleting records. It is designed as a beginner-friendly project for learning C# and basic object-oriented programming concepts.
 
 ---
-
+   _____                       _                                         ____                  _
+  | ____|  _ __ ___    _ __   | |   ___    _   _    ___    ___   ___    / ___|   _   _   ___  | |_    ___   _ __ ___
+  |  _|   | '_ ` _ \  | '_ \  | |  / _ \  | | | |  / _ \  / _ \ / __|   \___ \  | | | | / __| | __|  / _ \ | '_ ` _ \
+  | |___  | | | | | | | |_) | | | | (_) | | |_| | |  __/ |  __/ \__ \    ___) | | |_| | \__ \ | |_  |  __/ | | | | | |
+  |_____| |_| |_| |_| | .__/  |_|  \___/   \__, |  \___|  \___| |___/   |____/   \__, | |___/  \__|  \___| |_| |_| |_|
+                      |_|                  |___/                                 |___/
 # Technologies Used
 
 * C#
@@ -27,6 +32,23 @@ This project helped me understand how to structure a small application, manage d
 
 This feature allows the user to add a new employee to the system. The user is asked to enter the following details:
 
+                      |_|                  |___/                                 |___/
+┌─Employees Management System─┐
+│                             │
+│                             │
+│                             │
+│                             │
+│   1: Add Employee           │
+│      2: show Employees      │
+│      3: Search Employee     │
+│      4: Delete Employee     │
+│      5: show top Employees  │
+│      6: Exit                │
+│                             │
+│                             │
+│                             │
+│                             │
+└─────────────────────────────┘
 * Employee ID
 * First Name
 * Last Name
@@ -50,9 +72,10 @@ Level : L7
 This option displays all employee records that have been added to the system.
 
 Example Output
-
-98382 Himanshu Kumar IT 20000 L7
-948239 Pramanshu Singh IT 39283 L7
+                            Employees List
+┌────────┬──────────┬───────────┬────────────┬────────┬─────────────┬───────┐
+│ Emp Id │ Emp Name │ Last Name │ Department │ Salary │ Salary Type │ Layer │
+└────────┴──────────┴───────────┴────────────┴────────┴─────────────┴───────┘
 
 ---
 
